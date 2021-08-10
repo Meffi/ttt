@@ -1,0 +1,29 @@
+<?php
+$this->headMeta()->appendHttpEquiv(
+    'Content-Type', 'text/html;charset=utf-8');
+$this->headTitle('ToDo APP')->setSeparator(' - ');
+
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tic-Tac-Toe</title>
+    <?php
+    echo $this->headMeta();
+    echo $this->headLink()->appendStylesheet($this->baseUrl().'/css/ttt.css');
+    echo $this->headScript()->appendFile($this->baseUrl().'/js/jquery.min.js');
+    echo $this->headScript()->appendFile($this->baseUrl().'/js/custom.js');
+    ?>
+</head>
+<body>
+<div id="welcome">
+    <h1>Tic-Tac-Toe</h1>
+    <div id="more-information">
+        <div id="rightSide">
+            <div id="status"></div>
+            <div id="newGame" onclick="new_game_clicker()" title="Start a new game">Start New Game</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

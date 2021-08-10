@@ -1,0 +1,100 @@
+body { 
+   font-family: arial, helvetica, san-serif;
+   margin: 0;
+   padding: 0;
+   font-size: 12px;
+   line-height: 16px;
+   background-color: #DDC;
+   color: #666;
+}
+
+h1 { font-size: 28px;
+     line-height: 32px; 
+     margin: 0;
+     padding: 0;
+    text-align: center;
+   }
+
+.square {
+   padding: 0;
+   margin: 0;
+   width: 100px;
+   height: 100px;
+   background-color: #CCC;
+   border: 2px solid #666;
+   float: left;
+   position: relative;
+}
+
+.p {
+   font-size: 80px;
+   line-height: 84px;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+}
+
+.clr {
+  clear: both;
+}
+
+#welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content {
+   width: 710px;
+}
+
+#ms_notice {
+  margin-bottom: 20px;
+  border: 1px solid red;
+  color: red;
+  background-color: #FEE;
+  padding: 5px 5px 5px 5px;
+  width: 400px;  
+  font-weight: bold;
+}
+
+#header {
+   padding-bottom: 20px;
+   padding-left: 70px;
+}
+
+#leftSide {
+   margin-left: 20px;
+    width: 60%;
+    max-width: 500px
+
+}
+
+#rightSide {
+  padding-left: 20px;
+  width: 40%;
+}
+
+#status {
+   border: 1px solid black;
+   font-size: 16px;
+   line-height: 20px;
+   width: 260px;
+}
+
+#newGame {
+   margin-top: 10px;
+   width: 120px;
+   font-size: 18px;
+   line-height: 22px;
+   font-weight: bold;
+   background-color: #CCC;
+   border: 1px solid #666;
+   padding: 5px 0px 5px 10px;
+}
+
+#footer {
+   width: 500px;
+   padding-top: 40px;
+}
+

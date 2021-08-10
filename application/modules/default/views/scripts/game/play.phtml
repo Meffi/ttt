@@ -1,0 +1,53 @@
+<?php
+$this->headMeta()->appendHttpEquiv(
+    'Content-Type', 'text/html;charset=utf-8');
+$this->headTitle('ToDo APP')->setSeparator(' - ');
+
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tic-Tac-Toe</title>
+    <?php
+    echo $this->headMeta();
+    echo $this->headLink()->appendStylesheet($this->baseUrl().'/css/ttt.css');
+    echo $this->headScript()->appendFile($this->baseUrl().'/js/jquery.min.js');
+    echo $this->headScript()->appendFile($this->baseUrl().'/js/custom.js');
+    ?>
+
+
+</head>
+<body>
+<script>
+  var  gameId = "<?php echo $this->gameId; ?>";
+  $(document).ready(init);
+
+</script>
+<h1>Tic-Tac-Toe</h1>
+<div id="welcome">
+
+
+    <div id="leftSide">
+        <div id="s0" class="square"></div>
+        <div id="s1" class="square"></div>
+        <div id="s2" class="square"></div>
+        <div class="clr"></div>
+        <div id="s3" class="square"></div>
+        <div id="s4" class="square"></div>
+        <div id="s5" class="square"></div>
+        <div class="clr"></div>
+        <div id="s6" class="square"></div>
+        <div id="s7" class="square"></div>
+        <div id="s8" class="square"></div>
+        <div class="clr"></div>
+    </div>
+
+    <div id="rightSide">
+        <div id="status"></div>
+        <div id="newGame"  onclick="new_game_clicker()" title="Start a new game">New Game?</div>
+    </div>
+
+    <div class="clr"></div>
+</div>
+
+</body>
+</html>
